@@ -1,0 +1,5 @@
+<% @song.attributes.each do |attr| %>
+  <p><%= "#{attr[0].titlecase}: #{attr[1]}" %></p>
+<% end %>
+
+<%= button_to "Delete This Song", @song, method: :delete %>
